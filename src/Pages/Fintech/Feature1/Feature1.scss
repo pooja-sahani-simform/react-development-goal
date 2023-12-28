@@ -1,0 +1,109 @@
+@import "../../../scss/vars";
+.feature-container-1 {
+    flex-direction: column;
+    --bs-gutter-x: 0rem;
+    width: 100%;
+
+    .feature-data-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        padding: 6rem 0;
+        background: lighten(#1053F3, 45%);
+
+        .data-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+
+            .feature-dashboard-container {
+                .data-left-wrapper {
+                    .data-left-container {
+                        flex-direction: column;
+
+                        .woman-image-wrapper {
+                            align-items: center;
+                            display: flex;
+                            justify-content: center;
+
+                            .woman-image {
+                                position: relative;
+                                border-radius: 1rem;
+                            }
+
+                            .pattern-image {
+                                position: absolute;
+                            }
+
+                            .down-arrow {
+                                position: absolute;
+                                top: 37%;
+                            }
+
+                        }
+
+                        .price-container {
+                            .price-wrapper {
+                                position: absolute;
+                                bottom: 40%;
+                                width: 50%;
+                                left: 8%;
+
+                                .card-wrapper {
+                                    background-color: $white;
+                                    width: 40%;
+                                    border-radius: 1rem;
+                                    flex: unset;
+                                    padding: 1.5rem;
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content-right-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .content-right-container {
+                        flex-direction: column;
+
+                        .content-header {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            h1 {
+                                width: 70%;
+                                font-size: 2.5rem;
+                                font-weight: 700;
+                            }
+
+                            .sub-heading-1,
+                            .sub-heading-2 {
+                                width: 60%;
+                                margin: 1rem 0rem;
+                                font-size: 1rem;
+                            }
+
+                            .sub-heading-1 {
+                                font-weight: 500;
+                            }
+
+                            .sub-heading-2 {
+                                margin-top: 0;
+                                color: $neutral-60;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

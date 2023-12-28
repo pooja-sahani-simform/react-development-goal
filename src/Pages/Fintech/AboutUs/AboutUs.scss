@@ -1,0 +1,152 @@
+@import "../../../scss/vars";
+
+.about-us-container {
+    flex-direction: row;
+    background: lighten($white, 37%);
+    --bs-gutter-x: 0rem;
+    width: 100%;
+
+    .about-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        padding: 0;
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            padding-top: 6rem;
+
+            .content-left-wrapper {
+                img {
+                    width: 30rem;
+                }
+            }
+
+            .content-right-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .content-right-container {
+                    flex-direction: column;
+
+                    .content-header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        h1 {
+                            width: 70%;
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            width: 58%;
+                            margin: 1rem 0rem 2rem;
+                            font-size: 1rem;
+                            color: $neutral-60;
+                        }
+                    }
+
+                    .bottom-container {
+                        padding-top: 3rem;
+
+                        .transfer-text {
+                            width: 65%;
+                            margin: 1rem 0rem 0.5rem;
+                            font-size: 1rem;
+                        }
+
+                        .user-details {
+                            margin-top: 1rem;
+                            margin-left: 1rem;
+
+                            h3 {
+                                font-size: 1rem;
+                                font-weight: 700;
+                                margin: 0;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                                color: $neutral-60;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feature-container {
+        display: flex;
+        padding: 5rem 15.375rem 5rem 15.375rem;
+        justify-content: center;
+        align-items: center;
+
+        .feature-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 80%;
+            gap: 3rem;
+
+            .feature-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    width: 60%;
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+
+            .feature-content-wrapper {
+                display: flex;
+                gap: 5.5rem;
+                justify-content: center;
+                align-items: center;
+
+                .feature-content {
+                    display: flex;
+                    padding: 1.5rem;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 2.1rem;
+                    flex-wrap: nowrap;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    border-radius: 1rem;
+
+                    .feature-sub-content-wrapper {
+                        padding: 0;
+                        font-family: Inter;
+
+                        h2 {
+
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            margin: 0;
+                            font-size: 1rem;
+                            color: #757B8A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

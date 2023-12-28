@@ -1,0 +1,80 @@
+@import './vars';
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $silver;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+    background: $silver ;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $neutral-60;
+}
+body {
+ 
+    .btn {
+        text-align: center;
+        display: inline-block;
+        padding: 0.5rem 0.9rem;
+        background-color: #dadada;
+        color: #000;
+        border: solid 2px #dadada;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        &--small {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.45rem;
+        }
+
+        &.btn--primary {
+            background-color: $coworking-space;
+            font-weight: bold;
+            color: $white;
+            border-color: $coworking-space;
+            &:hover {
+                background-color: lighten($white, 10%) !important;
+                border-color: lighten($coworking-space, 10%) !important;;
+                color: $coworking-space;
+            }
+        }
+
+        &.btn--link {
+            color: $coworking-space;
+            transition: border-color 0.25s;
+            background-color: transparent;
+
+            &:hover {
+                border-color: $coworking-space;
+            }
+        }
+
+        &.btn--primary--fintech {
+            background-color: $fintech-primary;
+            font-weight: bold;
+            color: $white;
+            border-color: $fintech-primary;
+            border-radius: 0.5rem;
+            padding: 0.7rem 0.9rem;
+            &:hover {
+                background-color: lighten($white, 10%) !important;
+                border-color: lighten($fintech-primary, 10%) !important;;
+                color: $fintech-primary;
+            }
+        }
+    }
+}

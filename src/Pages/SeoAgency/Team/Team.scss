@@ -1,0 +1,55 @@
+@import "../../../scss/vars";
+
+.team-wrapper {
+    padding: 1rem 5rem 7.25rem 15.375rem;
+    gap: 3.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+
+        h1 {
+            width: 24rem;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        p {
+            width: 26.813rem;
+            margin: 0;
+            font-size: 1rem;
+            color: #757B8A;
+        }
+    }
+
+    .team-list-wrapper {
+        width: 80%;
+        flex: unset;
+
+        .team-content {
+            .card-content {
+
+                h2 {
+                    margin-top: 1rem;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                }
+
+                .team-image {
+                    width: 17.25rem;
+                    height: 18.375rem;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 1rem;
+                    color: #757B8A;
+                }
+            }
+        }
+    }
+}

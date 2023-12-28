@@ -1,0 +1,64 @@
+@import "../../../scss/vars";
+
+.strategies-container {
+    padding: 5rem 15.375rem 7.25rem 15.375rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    .header-container {
+        flex: unset;
+        margin-bottom: 3rem;
+
+        h1 {
+            width: 33rem;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .item {
+            width: 70%;
+
+            hr {
+                margin-top: 2rem;
+            }
+
+            .item-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h2 {
+
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    width: 30.813rem;
+                    margin: 0;
+                    font-size: 1rem;
+                    color: #757B8A;
+                }
+            }
+        }
+    }
+
+    .button-wrapper {
+        margin-bottom: 0;
+        margin: 4rem;
+        width: 80%;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        position: relative;
+    }
+}

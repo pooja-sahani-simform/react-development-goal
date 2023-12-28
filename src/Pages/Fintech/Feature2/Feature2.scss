@@ -1,0 +1,97 @@
+@import "../../../scss/vars";
+
+.feature-container-3 {
+    flex-direction: column;
+    --bs-gutter-x: 0rem;
+    width: 100%;
+
+    .feature-data-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        padding: 6rem 0;
+
+        .data-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+
+            .feature-dashboard-container {
+                .data-left-wrapper {
+                    .data-left-container {
+                        flex-direction: column;
+
+                        .content-header {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            h1 {
+                                width: 80%;
+                                font-size: 2.5rem;
+                                font-weight: 700;
+                            }
+
+                            p {
+                                width: 60%;
+                                margin: 1rem 0rem 2rem;
+                                font-size: 1rem;
+                                color: $neutral-60;
+                            }
+
+                            .learn-more {
+                                margin-left: 0.8rem;
+                                background-color: $white;
+                                color: #1053F3;
+                            }
+                        }
+                    }
+                }
+
+                .content-right-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .content-right-container {
+                        flex: unset;
+                        width: 90%;
+                        flex-direction: column;
+
+                        .content-header {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            padding: 0;
+                            margin: 0 0 2.5rem;
+
+                            .image-wrapper {
+                                background: black;
+                                padding: 1rem;
+                                border-radius: 50%;
+                                margin-bottom: 1rem;
+                                margin-right: 1rem;
+                            }
+
+                            h3 {
+                                width: 70%;
+                                font-size: 1rem;
+                                font-weight: 700;
+                                margin-bottom: 0.5rem;
+                            }
+
+                            p {
+                                width: 96%;
+                                font-size: 1rem;
+                                color: $neutral-60;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

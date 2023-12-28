@@ -1,0 +1,83 @@
+@import "../../../scss/vars";
+
+.about-container {
+    padding: 5rem 8rem;
+    margin: 0;
+    background: lighten($coworking-space, 37%);
+
+    .about-wrapper {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: unset;
+            flex-wrap: nowrap;
+            position: relative;
+            width: 45%;
+
+            .play-image {
+                position: absolute;
+            }
+
+            .graph-box {
+                background: #fff;
+                width: 20rem;
+                height: 15%;
+                position: absolute;
+                border-radius: 0.5rem;
+                left: 35%;
+                bottom: 16%;
+                padding: 2rem;
+
+                h3 {
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .about-content-wrapper {
+        width: 55%;
+
+        .about-header {
+            .content {
+                h1 {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    width: 33rem;
+                }
+
+                p {
+                    width: 28rem;
+                    margin: 2rem 0;
+                    font-size: 1rem;
+                    color: #757B8A;
+                }
+            }
+        }
+
+        .index-content {
+            flex-wrap: nowrap;
+            flex: unset;
+            width: 20%;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 700;
+                width: 33rem;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1rem;
+                color: #757B8A;
+            }
+        }
+    }
+}

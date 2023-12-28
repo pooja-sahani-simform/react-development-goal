@@ -1,0 +1,149 @@
+@import "../../../scss/vars";
+
+.dashboard-container {
+    height: 100%;
+    flex-direction: column;
+    background: lighten($coworking-space, 37%);
+    --bs-gutter-x: 0rem;
+    width: 100%;
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+
+            .content-container {
+                display: flex;
+                flex-direction: column;
+                --bs-gutter-x: 0;
+                align-items: flex-start;
+
+                .home-header {
+                    display: flex;
+                    align-items: center;
+                    padding: 2rem 0;
+
+                    .header-image-wrapper {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-right: 3.4rem;
+                    }
+
+                    .header-content-wrapper {
+                        color: $neutral-60;
+                        gap: 2rem;
+                        cursor: pointer;
+                        flex-direction: row;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 1rem;
+                        font-weight: 700;
+
+                        .col {
+                            &:hover {
+                                color: $coworking-space;
+                            }
+                        }
+                    }
+                }
+
+                .content-header {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 80%;
+                    padding-top: 6rem;
+
+                    h1 {
+                        width: 80%;
+                        font-size: 4.5rem;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        width: 55%;
+                        margin-top: 2rem;
+                        font-size: 1rem;
+                        color: $neutral-60;
+                    }
+
+                    .button-wrapper {
+                        margin: 1.5rem 0;
+                        width: 22rem;
+                        justify-content: space-between;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        position: relative;
+
+                        .arrow-image {
+                            transform: rotate(0.888deg);
+                            flex-shrink: 0;
+                            position: absolute;
+                            right: 10%;
+                            bottom: -22%;
+                            width: 7rem;
+                        }
+                    }
+                }
+            }
+
+            .image-wrapper {
+                width: 56%;
+                justify-content: flex-end;
+                position: relative;
+
+                .dashboard-image {
+                    border-radius: 0px 0px 15.094rem 15.094rem;
+                    width: 30.188rem;
+                    height: 45.75rem;
+                    position: absolute;
+                    top: 0;
+                }
+
+                .graph-box {
+                    background: #fff;
+                    width: 20rem;
+                    height: 30%;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    right: -30%;
+                    bottom: 34%;
+                    padding: 2rem;
+
+                    h3 {
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .graph-box-2 {
+                    background: #fff;
+                    width: 48%;
+                    height: 38%;
+                    position: absolute;
+                    border-radius: 0.5rem;
+                    left: -8%;
+                    bottom: -13%;
+                    padding: 2rem;
+
+                    h3 {
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../../scss/vars";
+
+.logo-container {
+    display: flex;
+    padding: 4rem 0px 4rem 0px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    .col {
+        width: 10.625rem;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo-image {
+            width: 10.938rem;
+            height: 2rem;
+            flex-shrink: 0;
+        }
+    }
+
+}

@@ -1,0 +1,207 @@
+@import "../../../scss/vars";
+.dashboard-container {
+    height: 100%;
+    flex-direction: column;
+    background: lighten($white, 37%);
+    --bs-gutter-x: 0rem;
+    width: 100%;
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        padding: 0;
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+
+            .content-container {
+                display: flex;
+                flex-direction: row;
+                --bs-gutter-x: 0;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                .home-header {
+                    display: flex;
+                    align-items: center;
+                    padding: 2rem 0;
+
+                    .header-image-wrapper {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-right: 3.4rem;
+                    }
+
+                    .header-content-wrapper {
+                        color: $neutral-60;
+                        gap: 2rem;
+                        cursor: pointer;
+                        flex-direction: row;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 1rem;
+                        font-weight: 700;
+
+                        .col {
+                            &:hover {
+                                color: $fintech-primary;
+                            }
+                        }
+                    }
+                }
+
+                .button-wrapper {
+                    margin: 1.5rem 0;
+                    width: 22rem;
+                    justify-content: flex-end;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    button {
+                        padding: 0.7rem 1.9rem;
+                    }
+                }
+
+
+            }
+
+            .home-dashboard-container {
+                .content-left-wrapper {
+                    .content-left-container {
+                        flex-direction: column;
+
+                        .woman-image-wrapper {
+                            .woman-image {
+                                position: relative;
+                            }
+
+                            .pattern-image {
+                                position: absolute;
+                            }
+
+                            .down-arrow {
+                                position: absolute;
+                                top: 37%;
+                            }
+
+                        }
+
+                        .price-container {
+                            .price-wrapper {
+                                position: absolute;
+                                bottom: 40%;
+                                width: 50%;
+                                left: 8%;
+
+                                .card-wrapper {
+                                    background-color: $white;
+                                    width: 40%;
+                                    border-radius: 1rem;
+                                    flex: unset;
+                                    padding: 1.5rem;
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content-right-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .content-right-container {
+                        flex-direction: column;
+
+                        .content-header {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            h1 {
+                                width: 80%;
+                                font-size: 4rem;
+                                font-weight: 700;
+                            }
+
+                            p {
+                                width: 60%;
+                                margin: 1rem 0rem 2rem;
+                                font-size: 1rem;
+                                color: $neutral-60;
+                            }
+
+                            button {
+                                margin-bottom: 6rem;
+                            }
+                        }
+
+                        .award-wrapper {
+                            flex: unset;
+                            width: 45%;
+
+                            h1 {
+                                font-size: 2.5rem;
+                                font-weight: 700;
+                                margin-bottom: 0;
+                            }
+
+                            hr {
+                                border: none;
+                                margin: 1rem 0 0;
+                                padding: 0;
+                                height: 50px;
+                                border-left: 1px solid $neutral-60;
+                                align-items: center;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                width: 1rem;
+                            }
+
+                            p {
+                                font-size: 0.75rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-container {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        background-color: $fintech-primary;
+
+        .col {
+            width: 10.625rem;
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logo-image {
+                width: 10.938rem;
+                height: 2rem;
+                flex-shrink: 0;
+            }
+        }
+
+    }
+}

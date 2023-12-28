@@ -1,0 +1,90 @@
+@import "../../../scss/vars";
+
+.feature-container {
+    display: flex;
+    padding: 5rem 15.375rem 7.25rem 15.375rem;
+    justify-content: center;
+    align-items: center;
+
+    .feature-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 80%;
+        gap: 3rem;
+
+        .feature-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                width: 55%;
+                font-size: 2.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+
+        .feature-content-wrapper {
+            display: flex;
+            gap: 5.5rem;
+            justify-content: center;
+            align-items: center;
+
+            .feature-content-1 {
+                display: flex;
+                width: 17.25rem;
+                height: 18.188rem;
+                padding: 1.5rem;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 2.1rem;
+                flex-wrap: nowrap;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                border-radius: 1rem;
+
+                .icon-wrapper {
+                    border-radius: 0.3rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background-color: #EB6E46;
+                    flex: unset;
+                    margin: 0;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+
+                    .logo-image {
+                        width: 3rem;
+                        height: 2.1rem;
+                    }
+                }
+
+                .feature-sub-content-wrapper {
+                    padding: 0;
+                    font-family: Inter;
+
+                    h2 {
+
+                        font-size: 1.125rem;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 1rem;
+                        color: #757B8A;
+                    }
+                }
+            }
+
+            .feature-content-2 {
+                background: lighten($coworking-space, 37%);
+            }
+        }
+    }
+}
